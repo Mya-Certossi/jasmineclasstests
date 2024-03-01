@@ -1,0 +1,18 @@
+function yee_ha(number) {
+    if (number % 3 === 0 && number % 7 === 0) {
+        return "Yee Ha";
+    } else if (number % 3 === 0) {
+        return "Yee";
+    } else if (number % 7 === 0) {
+        return "Ha";
+    } else {
+        return "Nada";
+    }
+}
+const testCases = [9, 14, 21, 4];
+
+console.log("Test cases for yee_ha function:");
+testCases.forEach((testCase) => {
+    const result = yee_ha(testCase);
+    console.log(`Number ${testCase}: ${result}`);
+}); 
